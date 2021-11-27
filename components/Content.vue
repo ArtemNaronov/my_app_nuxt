@@ -5,6 +5,10 @@
     <div class="Game">
       <div class="Game_count">
         <span>{{lang.count}}: {{ count }}</span>
+        <div :class="'selectColor color_' + selectColor">
+          <span>{{ selectColor ? '' : 'None'}}</span>
+        </div>
+        <span>{{ selectColor ? lang.findColor : lang.selectColor }}</span>
       </div>
       <div class="Game_conteiner">
         <div class="Game_conteiner_row" v-for="(row, index) in 4" :key="index">

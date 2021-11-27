@@ -4,12 +4,16 @@ export const state = () => ({
     rus: {
       header: 'Игра',
       title: 'Игра с цветами',
-      count: 'Счёт'
+      count: 'Счёт',
+      selectColor: 'Выберите цвет',
+      findColor: 'Найдите цвет',
     },
     eng: {
       header: 'Game',
       title: 'Playing with colors',
-      count: 'Count'
+      count: 'Count',
+      selectColor: 'Select color',
+      findColor: 'Find color',
     }
   }
 });
