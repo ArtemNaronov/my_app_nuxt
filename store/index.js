@@ -2,12 +2,14 @@ export const state = () => ({
   thisLang: 'rus',
   lang: {
     rus: {
-      header: 'Какое-то название',
-      title: 'Заголовок на русском',
+      header: 'Игра',
+      title: 'Игра с цветами',
+      count: 'Счёт'
     },
     eng: {
-      header: 'Some title',
-      title: 'Title in English',
+      header: 'Game',
+      title: 'Playing with colors',
+      count: 'Count'
     }
   }
 });

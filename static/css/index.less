@@ -1,3 +1,5 @@
+@import "colors/color.less";
+
 * {
   font-family: 'Courier New', Courier, monospace;
   color: #fff;
@@ -164,5 +166,31 @@ h1 {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
+  }
+}
+.Game {
+  box-sizing:border-box;
+
+  &_count {
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+
+  &_conteiner{
+    width: 100%;
+    text-align: center;
+    &_row {
+      margin: 0 auto;
+      width: 50%;
+      display: flex;
+
+      &_col {
+        width: 25%;
+        height: 100px;
+        border: 2px solid #fff;
+        cursor: pointer;
+      }
+    }
   }
 }
