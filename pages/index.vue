@@ -2,6 +2,7 @@
   <div>
     <Header />
     <Content />
+    <nuxt-link to="/users">Users</nuxt-link>
   </div>
 </template>
 

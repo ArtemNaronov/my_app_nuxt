@@ -1,12 +1,9 @@
 <template>
   <section>
     <h1>{{pageTitle}}</h1>
-
-    <ul>
-      <li v-for="user of users" :key="user.id">
-        <a href="#" @click.prevent="openUser(user)">{{user.name}}</a>
-      </li>
-    </ul>
+    <div class="User">
+      <UserCard v-for="user of users" :user="user" :key="user.id"/>
+    </div>
   </section>
 </template>
 
@@ -23,11 +20,6 @@ export default {
   computed: {
     users() {
       return this.$store.getters['users/users']
-    }
-  },
-  methods: {
-    openUser(user) {
-      this.$router.push('/users/' + user.id)
     }
   }
 }
