@@ -53,10 +53,7 @@ export default ({
   computed: {
     lang() {
       return this.$store.getters.get_lang;
-    },
-    gallery() {
-      return this.$store.getters['gallery/gallery']
-    },
+    }
   },
   methods: {
     clickItem(item) {
