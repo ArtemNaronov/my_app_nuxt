@@ -1,5 +1,6 @@
 <template>
   <section>
+    <Breadcrumb />
     <h1>{{pageTitle}}</h1>
     <div class="User">
       <UserCard v-for="user of users" :user="user" :key="user.id"/>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <Header />
-    <Content />
     <nuxt-link to="/users">Users</nuxt-link>
+    <Content />
   </div>
 </template>
 
