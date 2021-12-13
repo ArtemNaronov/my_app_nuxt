@@ -1,5 +1,6 @@
 export const state = () => ({
   thisLang: 'rus',
+  sidebar: false,
   lang: {
     rus: {
       header: 'Игра',
@@ -21,6 +22,9 @@ export const mutations = {
   setThisLang(state, thisLang) {
     state.thisLang = thisLang;
   },
+  setSidebar(state, status) {
+    state.sidebar = status;
+  },
 };
 export const getters = {
   get_thisLang(state){
@@ -28,6 +32,9 @@ export const getters = {
   },
   get_lang(state){
     return state.lang[state.thisLang];
+  },
+  get_sidebar(state){
+    return state.sidebar;
   },
 };
 export const strict = false;

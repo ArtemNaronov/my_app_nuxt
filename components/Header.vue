@@ -1,6 +1,8 @@
 <template>
   <div class="header">
     <div class="header__avatar">
+    <div class="header__menu" @click="showSidebar()"></div>
+
       <img src="/img/467f277192ca6c22b388b1c60cacb0dc.jpg" alt="" srcset="">
     </div>
     <div class="header__title">
@@ -29,11 +31,17 @@ export default({
     },
     lang() {
       return this.$store.getters.get_lang;
+    },
+    sidebar() {
+      return this.$store.getters.get_sidebar
     }
   },
   methods: {
     changeLang(lang) {
      this.$store.commit("setThisLang", lang);
+    },
+    showSidebar(){
+      this.$store.commit("setSidebar", !this.sidebar)
     }
   }
 })

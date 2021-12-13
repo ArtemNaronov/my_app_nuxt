@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <nuxt-link to="/users">Users</nuxt-link>
+    <Sidebar />
     <Content />
   </div>
 </template>

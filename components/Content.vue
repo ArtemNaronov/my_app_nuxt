@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Content">
     <h1>{{ lang.title }}</h1>
 
     <div class="Game">

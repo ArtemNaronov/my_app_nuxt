@@ -11,7 +11,9 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-
+.Content {
+  margin-top: 50px;
+}
 .header {
   height: 50px;
   width: 100%;
@@ -20,15 +22,26 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  &__menu {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Layer_1' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath d='M256,0C114.618,0,0,114.618,0,256s114.618,256,256,256s256-114.618,256-256S397.382,0,256,0z M256,469.333 c-117.818,0-213.333-95.515-213.333-213.333S138.182,42.667,256,42.667S469.333,138.182,469.333,256S373.818,469.333,256,469.333 z'/%3E%3Cpath d='M362.667,149.333H149.333c-11.782,0-21.333,9.551-21.333,21.333c0,11.782,9.551,21.333,21.333,21.333h213.333 c11.782,0,21.333-9.551,21.333-21.333C384,158.885,374.449,149.333,362.667,149.333z'/%3E%3Cpath d='M362.667,234.667H149.333C137.551,234.667,128,244.218,128,256s9.551,21.333,21.333,21.333h213.333 c11.782,0,21.333-9.551,21.333-21.333S374.449,234.667,362.667,234.667z'/%3E%3Cpath d='M362.667,320H149.333C137.551,320,128,329.551,128,341.333c0,11.782,9.551,21.333,21.333,21.333h213.333 c11.782,0,21.333-9.551,21.333-21.333C384,329.551,374.449,320,362.667,320z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
   &__avatar {
     margin-left: 20px;
-    cursor: pointer;
-    width: 70px;
-  }
-  &__avatar img {
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
+    width: auto;
+    display: flex;
+
+    & img {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      border-radius: 100%;
+    }
   }
   &__title{
     color: #fff;
@@ -204,3 +217,15 @@ h1 {
     }
   }
 }
+.Sidebar li {
+  list-style-type: none;
+}
+.Sidebar {
+  transition: .5s;
+  width: 10vw;
+  position: fixed;
+  top: 50px;
+  height: 100vh;
+  background: darken(#4a4a4a, 20%);
+}
+
